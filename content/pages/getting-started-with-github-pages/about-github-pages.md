@@ -83,6 +83,12 @@ If you're a {% data variables.product.prodname_managed_user %}, your use of {% d
 
   - {% data variables.product.prodname_pages %} sites can only be published from repositories owned by organizations.
   - {% data variables.product.prodname_pages %} sites are only visible to other members of the enterprise.
+    - A special case is `<organization>.github.io` which cannot be private, which is required by EMU. This doesn't mean that you can't create a repo with said name but there's not support for creating public {% data variables.product.prodname_pages %} sites.
+  
+  *If {% data variables.product.prodname_pages %} are disable please ensure your administrator has enabled
+{% data variables.product.prodname_pages %} creation and your repo doesn't fall under the special case stated above for `<organization>.gihub.io`.* 
+
+Refer to "[Changing the visibility of your {% data variables.product.prodname_pages %} site](/pages/getting-started-with-github-pages/changing-the-visibility-of-your-github-pages-site)" for more information about access and visibility.
 
 For more information about {% data variables.product.prodname_emus %}, see "[About {% data variables.product.prodname_emus %}](/admin/identity-and-access-management/using-enterprise-managed-users-and-saml-for-iam/about-enterprise-managed-users)."
 {% endif %}
